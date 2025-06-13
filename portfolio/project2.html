@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            :root {
+    --primary-color: #8B4513; /* SaddleBrown - earthy */
+    --secondary-color: #A0522D; /* Sienna - slightly lighter earth tone */
+    --accent-color: #2E8B57; /* SeaGreen - for contrast, nature feel */
+    --text-color: #333;
+    --light-text-color: #f4f4f4;
+    --bg-color: #FDF5E6; /* OldLace - very light, warm background */
+    --card-bg: #fff;
+    --font-primary: 'Merriweather', serif;
+    --font-secondary: 'Montserrat', sans-serif;
+    --shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-secondary);
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+    overflow: hidden;
+}
+
+h1, h2, h3 {
+    font-family: var(--font-primary);
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+h1 { font-size: 3rem; margin-bottom: 1rem; }
+h2 { font-size: 2.5rem; margin-bottom: 1.5rem; text-align: center; }
+h3 { font-size: 1.5rem; margin-bottom: 0.5rem; }
+
+p {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--accent-color);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: none;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: var(--light-text-color);
+}
+.btn-primary:hover {
+    background-color: #65310c;
+}
+
+.btn-secondary {
+    background-color: var(--secondary-color);
+    color: var(--light-text-color);
+}
+.btn-secondary:hover {
+    background-color: #804020;
+}
+
+.section {
+    padding: 60px 0;
+}
+.section-subtitle {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 40px auto;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* --- Navigation Bar --- */
+#navbar {
+    background-color: rgba(139, 69, 19, 0.85);
+    color: var(--light-text-color);
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+#navbar.scrolled {
+    background-color: var(--primary-color);
+    box-shadow: var(--shadow);
+}
+#navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#navbar .logo {
+    font-family: var(--font-primary);
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--light-text-color);
+}
+#navbar .nav-links {
+    list-style: none;
+    display: flex;
+}
+#navbar .nav-links li {
+    margin-left: 25px;
+}
+#navbar .nav-links a {
+    color: var(--light-text-color);
+    font-weight: 600;
+    padding: 5px 0;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s ease, color 0.3s ease;
+}
+#navbar .nav-links a:hover,
+#navbar .nav-links a.active {
+    border-bottom: 2px solid var(--light-text-color);
+    color: #fff; /* Slightly brighter on hover/active */
+}
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+}
+.menu-toggle .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: var(--light-text-color);
+    transition: all 0.3s ease-in-out;
+}
+
+        </style>
+
+    </head>
+    <body>
+        project2
+    </body>
+</html>
